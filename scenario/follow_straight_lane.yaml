@@ -7,7 +7,7 @@ ParameterDeclaration:
   Max: 30
   NumDivisions: 3
 
-Map: /home/yamasa/Downloads/kashiwanoha
+Map: sample_map
 
 Entity:
   - Name: EgoCar
