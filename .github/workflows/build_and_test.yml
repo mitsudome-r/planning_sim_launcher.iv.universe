@@ -20,7 +20,7 @@ jobs:
     - name: Clone dependency packages
       run: |
         mkdir dependency_ws
-        vcs import dependency_ws < build_depends.repos
+        vcs import dependency_ws < planning_sim_launcher/build_depends.repos
 
     - name: Upgrade ros packages
       run: |
