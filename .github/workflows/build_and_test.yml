@@ -22,8 +22,8 @@ jobs:
 
     - name: Upgrade ros packages
       run: |
-        apt update
-        apt upgrade -y
+        sudo apt update
+        sudo apt upgrade -y
 
     - name: Install missing dependencies
       run: rosdep update && DEBIAN_FRONTEND=noninteractive rosdep install --from-paths . --ignore-src --rosdistro foxy -y
