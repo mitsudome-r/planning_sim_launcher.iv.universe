@@ -26,7 +26,7 @@ jobs:
         apt upgrade -y
 
     - name: Install missing dependencies
-      run: rosdep update && DEBIAN_FRONTEND=noninteractive sudo rosdep install --from-paths . --ignore-src --rosdistro foxy -y
+      run: rosdep update && DEBIAN_FRONTEND=noninteractive rosdep install --from-paths . --ignore-src --rosdistro foxy -y
 
     - name: Build
       run: . /opt/ros/foxy/setup.sh && colcon build --event-handlers console_cohesion+ --packages-up-to planning_simulator_launcher
